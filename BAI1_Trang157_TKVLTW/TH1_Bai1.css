@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif; /* Đặt font chữ chính là Arial, nếu không có thì dùng sans-serif */
+    text-align: center; /* Căn giữa nội dung trong body */
+    margin: 50px; /* Tạo khoảng cách 50px từ mép trang vào nội dung */
+}
+
+.container {
+    border: 2px solid black; /* Viền xung quanh container dày 2px, màu đen */
+    padding: 20px; /* Tạo khoảng cách bên trong container giữa nội dung và viền */
+    display: inline-block; /* Giữ nguyên kích thước nội dung nhưng không chiếm toàn bộ chiều rộng */
+}
+
+.image {
+    width: 190px; /* Đặt chiều rộng của ảnh là 190px */
+    height: 50px; /* Đặt chiều cao của ảnh là 50px */
+    display: block; /* Đặt ảnh thành block để dễ căn chỉnh */
+    margin: 0 auto; /* Căn giữa ảnh theo chiều ngang */
+}
+
+h1 {
+    font-size: 24px; /* Đặt kích thước chữ cho tiêu đề h1 là 24px */
+}
+
+strong {
+    color: black; /* Màu chữ của phần được bôi đậm là màu đen */
+}
+
+p {
+    font-size: 14px; /* Đặt kích thước chữ của đoạn văn là 14px */
+    color: gray; /* Màu chữ của đoạn văn là xám */
+}
+
+.buttons {
+    margin-top: 20px; /* Tạo khoảng cách 20px giữa đoạn văn và nút */
+}
+
+.btn {
+    background-color: black; /* Màu nền của nút là màu đen */
+    color: white; /* Màu chữ trên nút là màu trắng */
+    border: none; /* Loại bỏ viền của nút */
+    padding: 10px 20px; /* Tạo khoảng cách bên trong nút (trên dưới 10px, trái phải 20px) */
+    margin: 5px; /* Tạo khoảng cách 5px giữa các nút */
+    cursor: pointer; /* Khi di chuột vào nút, con trỏ chuột sẽ chuyển thành hình bàn tay */
+}

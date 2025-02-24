@@ -1,0 +1,88 @@
+/* Định dạng tổng thể */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0;
+}
+
+/* Container chính */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Icon email */
+.container i {
+    font-size: 40px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+/* Tiêu đề */
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Đoạn văn bản */
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Input email */
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Nút gửi yêu cầu */
+button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hiệu ứng hover cho nút */
+button:hover {
+    background-color: rgb(255, 192, 253);
+}
+
+/* Icon trong vòng tròn có viền */
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    border: 2px solid black; /* Viền xanh */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Tạo hình tròn */
+    margin: 0 auto 15px;
+}
+
+.icon-circle i {
+    font-size: 24px;
+    color: black; /* Màu của icon */
+}
