@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trai {
+    text-align: left;
+    width: 50%;
+}
+
+.phai {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.phai h2 {
+    margin-bottom: 5px;
+}
+
+.phai h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title h1 {
+    font-family: Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+.content {
+    margin: 20px;
+    font-size: 15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.footer img {
+    width: 150px;
+    height: auto;
+}
