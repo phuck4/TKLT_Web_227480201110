@@ -1,0 +1,19 @@
+h1 {
+    color: red;
+}
+
+h2 {
+    margin-top: -10px;
+    color: blue;
+}
+
+.Lop {
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+.hoTen {
+    font-size: 14px;
+    color: greenyellow;
+}
