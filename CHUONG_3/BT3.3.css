@@ -1,0 +1,18 @@
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+ol {
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+.body {
+    border: 2px solid ;
+    background-color: pink;
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+}
