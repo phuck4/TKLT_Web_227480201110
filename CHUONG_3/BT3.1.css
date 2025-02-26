@@ -1,0 +1,25 @@
+h1 {
+    color: red;
+}
+
+h2 {
+    color: blue;
+}
+
+h3 {
+    color: green;
+}
+
+.lop {
+    font-family: 'Times New Roman', serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nganh {
+    font-family: 'Times New Roman', serif;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: yellow;
+    width: 200px;
+}
