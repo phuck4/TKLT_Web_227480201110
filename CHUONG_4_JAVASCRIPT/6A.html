@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 6A</title>
+</head>
+<body>
+    <script>
+        function tinhTuoiTuNamSinh()
+        {
+            var D = new Date;
+            var namSinh, namHienTai;
+            namHienTai = D.getFullYear();
+            namSinh = prompt("Nhập năm sinh của bạn: ", "");
+            if(namSinh===null || namSinh.trim()==="")
+            {
+                alert("Bạn chưa nhập năm sinh!");
+                return;
+            }
+            namSinh=parseInt(namSinh);
+            if(isNaN(namSinh) || namSinh<=0 || namSinh>namHienTai)
+            {
+                alert("Năm sinh không hợp lệ. Vui lòng nhập lại!");
+                return;
+            }
+            var tuoi = namHienTai-namSinh;
+            alert("Tuổi của bạn hiện tại là: " + tuoi);
+        }
+    </script>
+
+    <h1>Tính tuổi từ năm sinh</h1>
+    <button onclick="tinhTuoiTuNamSinh()">Nhập năm sinh</button>
+    
+</body>
+</html>

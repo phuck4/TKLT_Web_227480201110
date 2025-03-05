@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 5A</title>
+</head>
+<body>
+    <script>
+        function hienThiThoiGian()
+        {
+            var D = new Date();
+            var gioPhutGiay = "Bây giờ là: " + D.getHours() + " giờ " + D.getMinutes() + " phút " + D.getSeconds() + " giây."
+            document.getElementById("hienThiGio").innerText = gioPhutGiay;
+        }
+        setInterval(hienThiThoiGian, 1000);
+    </script>
+
+    <h1 id="hienThiGio">Đang tải thời gian...</h1>
+</body>
+</html>

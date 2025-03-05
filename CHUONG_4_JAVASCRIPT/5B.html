@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 5B</title>
+</head>
+<body onload="hienThiNgayThangNam()">
+    <script>
+        function hienThiNgayThangNam()
+        {
+            var D = new Date();
+            var ngay = D.getDate();
+            var thang = D.getMonth() +1;
+            var nam = D.getFullYear();
+            document.getElementById("ketQua").innerHTML = "Hôm nay là ngày: " + ngay + "/" + thang + "/" + nam;
+        }
+    </script>
+    
+    <h1 id="ketQua">ketQua</h1>
+</body>
+</html>

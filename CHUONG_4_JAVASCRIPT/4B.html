@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 4B</title>
+</head>
+<body>
+    <script>
+        function hienThi()
+        {
+            alert(txthoTen.value);
+        }
+        function hienThi1()
+        {
+            alert(txtdonVi.value);
+        }
+    </script>
+
+    <input type="text" id="txthoTen" value="Chào">
+    <input type="text" id="txtdonVi" value="Đơn vị">
+    <button name="hoTen" value="Họ tên" onclick="hienThi('txthoTen', 'txtdonVi')">Họ tên</button>
+    <button name="donvi" value="Đơn vị" onclick="hienThi1('txtdonVi', 'txthoTen')">Đơn vị</button>
+
+</body>
+</html>
