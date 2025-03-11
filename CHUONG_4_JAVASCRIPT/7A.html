@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 7A</title>
+</head>
+<body>
+    <script>
+        var D = new Date();
+        var namSinh, namHienTai;
+        namHienTai = D.getFullYear();
+        do{
+            namSinh = prompt("Nhập năm sinh sinh của bạn: ", "");
+            namSinh = parseInt(namSinh);
+            if (namSinh > namHienTai) {
+                alert("Năm sinh không thể lớn hơn năm hiện tại! Vui lòng nhập lại.");
+            } else {
+                break;
+            }
+        } while (isNaN(namSinh) || namSinh <= 0 || namSinh > namHienTai);
+        alert("Tuổi của bạn bây giờ là: " + (namHienTai - namSinh));
+    </script>
+</body>
+</html>
