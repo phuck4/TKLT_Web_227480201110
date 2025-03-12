@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 9A</title>
+</head>
+<body>
+    <script>
+        var soLuong, x;
+        var DS = new Array(100);
+        soLuong = prompt("Nhap so nguoi ban muon: ", "");
+        soLuong = parseInt(soLuong);
+        for (i=0; i<soLuong;i++)
+        {
+            DS[i] = prompt("Nhap ho va ten: ", "");
+        }
+        DS.sort();
+        document.write("<h1>Danh sach da sap xep la </h1>");
+        for (x in DS)
+        {
+            document.write(DS[x] + "<br>");
+        }
+    </script>
+</body>
+</html>
