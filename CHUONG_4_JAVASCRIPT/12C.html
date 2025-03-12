@@ -8,7 +8,8 @@
 <body>
     <input type="text" id="Ho" value="Họ">
     <input type="text" id="Ten" value="Tên">
-    <input type="button" name="HienThi" value="Hiển Thị" onclick="alert(Ho.value + ' và ' + Ten.value)">
+    <input type="text" id="HoTen">
+    <input type="button" name="HienThi" value="Hiển Thị" onclick="document.getElementById('HoTen').value = Ho.value + ' và ' + Ten.value">
 
 </body>
 </html>
