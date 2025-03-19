@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 17B  </title>
+</head>
+<body>
+    <h1>Chọn Màu Nền</h1>
+
+  <label>
+    <input type="radio" name="color" value="yellow" onclick="changeBackgroundColor('yellow')"> Yellow
+  </label>
+  <label>
+    <input type="radio" name="color" value="green" onclick="changeBackgroundColor('green')"> Green
+  </label>
+  <label>
+    <input type="radio" name="color" value="brown" onclick="changeBackgroundColor('brown')"> Brown
+  </label>
+  <label>
+    <input type="radio" name="color" value="magenta" onclick="changeBackgroundColor('magenta')"> Magenta
+  </label>
+
+  <script>
+    function changeBackgroundColor(color) {
+      document.body.style.backgroundColor = color;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 19A</title>
+</head>
+<body style="font-family: Arial;">
+    <input type="button" id="Gửi" value="Gửi" onmousemove="updateStatus('Chuột trong nút');">
+    <input type="text" onmousemove="updateStatus('Chuột trong textBox');">
+    <br>
+    <br>
+    <input type="radio" name="GioiTinh" id="Nam" onmousemove="updateStatus('Trong Nam');"> Nam
+    <input type="radio" name="GioiTinh" id="Nu" onmousemove="updateStatus('Trong Nữ');"> Nữ
+
+    <div id="status"></div>
+
+    <script>
+        function updateStatus(message) {
+            document.getElementById('status').innerText = message;
+        }
+    </script>
+</body>
+</html>

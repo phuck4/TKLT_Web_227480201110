@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 20A</title>
+</head>
+<body>
+    Số Lượng: <input name="SoLuong" id="SoLuong" onkeyup="TinhTien()"><br><br>
+    Đơn giá: <input name="DonGia" id="DonGia" onkeyup="TinhTien()"><br><br>
+    Thành Tiền: <input name="ThanhTien" id="ThanhTien"> VND
+
+    <script>
+        function TinhTien() {
+            var soLuong = parseFloat(document.getElementById('SoLuong').value) || 0;
+            var donGia = parseFloat(document.getElementById('DonGia').value) || 0;
+
+            var thanhTien = soLuong * donGia;
+
+            document.getElementById('ThanhTien').value = thanhTien.toFixed(2);
+        }
+    </script>
+    
+</body>
+</html>

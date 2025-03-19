@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 15A</title>
+</head>
+<body>
+    <h2>Nhập các giá trị và nhấn nút đêt thay đổi</h2>
+    <p>Nhập tiêu đề mới</p>
+    <input type="text" name="TieuDe" id="TieuDe">
+    <p>Nhập màu nền vào bên dưới</p>
+    <input type="text" name="MauNen" id="MauNen">
+    <p>Nhập màu chữ vào bên dưới</p>
+    <input type="text" name="MauChu" id="MauChu">
+    <p>Nhập dòng trạng thái của bạn vào đây</p>
+    <input type="text" name="TrangThai" id="TrangThai">
+    <br>
+    <br>
+    <input type="button" name="ThayDoi" value="Thay đổi" onclick="CapNhat();">
+    
+    <script>
+        function CapNhat()
+        {
+            document.title = TieuDe.value;
+            document.bgColor = MauNen.value;
+            document.fgColor = MauChu.value;
+            document.defaultStatus = TrangThai.value;
+        }
+    </script>
+</body>
+</html>
