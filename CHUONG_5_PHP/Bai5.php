@@ -1,58 +1,75 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài 5 PHP</title>
+    <title>Tính USCLN và BSCNN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        input, button {
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h2>TÍNH USCLN VÀ BSCNN</h2>
-    <div class="container">
-    <form method="POST">
-            <label>Số thứ 1:</label>
-            <input type="number" name="so1" value="<?= isset($_POST['so1']) ? $_POST['so1'] : '' ?>" required> <br>
 
-            <label>Số thứ 2:</label>
-            <input type="number" name="so2" value="<?= isset($_POST['so2']) ? $_POST['so2'] : '' ?>" required> <br>
+<h2>TÍNH USCLN VÀ BSCNN</h2>
+<div class="container">
+    <form method="post">
+        <label for="num1">Số thứ 1:</label>
+        <input type="number" name="num1" required value="<?= isset($_POST['num1']) ? $_POST['num1'] : 0; ?>"><br>
 
-            <label>Kết quả:</label>
-            <input type="text" name="ketqua" value="<?= htmlspecialchars($ketqua) ?>" readonly> <br>
+        <label for="num2">Số thứ 2:</label>
+        <input type="number" name="num2" required value="<?= isset($_POST['num2']) ? $_POST['num2'] : 0; ?>"><br>
 
-            <button type="submit" name="uscln">USCLN</button>
-            <button type="submit" name="bscnn">BSCNN</button>
-        </form>
-    </div>
-
-    <?php
-        $ketqua = "";
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            if (isset($_POST['so1']) && isset($_POST['so2'])) {
-                $so1 = intval($_POST['so1']);
-                $so2 = intval($_POST['so2']);
-
-                function USCLN($a, $b) {
-                    while ($b != 0) {
-                        $temp = $b;
-                        $b = $a % $b;
-                        $a = $temp;
-                    }
-                    return $a;
-                }
-
-                function BSCNN($a, $b) {
-                    return ($a * $b) / USCLN($a, $b);
-                }
-
-                if ($so1 > 0 && $so2 > 0) {
-                    if (isset($_POST['uscln'])) {
-                        $ketqua = "USCLN: " . USCLN($so1, $so2);
-                    } elseif (isset($_POST['bscnn'])) {
-                        $ketqua = "BSCNN: " . BSCNN($so1, $so2);
-                    }
-                } else {
-                    $ketqua = "Vui lòng nhập số nguyên dương.";
-                }
-            }
+        <label for="result">Kết quả:</label>
+        <input type="number" name="result" value="<?php 
+        if($_SERVER["REQUEST_METHOD"] == "POST"){
+            echo tinhtoan();
         }
-        ?>
+        ?>" readonly>
+        <br>
+        <button type="submit" name="uscln">USCLN</button>
+        <button type="submit" name="bscnn">BSCNN</button>
+    </form>
+</div>
+
+<?php
+function uscln($a, $b) {
+    while ($b != 0) {
+        $temp = $b;
+        $b = $a % $b;
+        $a = $temp;
+    }
+    return $a;
+}
+
+function bscnn($a, $b) {
+    return ($a * $b) / uscln($a, $b);
+}
+function tinhtoan(){
+        $num1 = $_POST["num1"];
+        $num2 = $_POST["num2"];
+
+        if (isset($_POST["uscln"])) {
+            $result = uscln($num1, $num2);
+        } elseif (isset($_POST["bscnn"])) {
+            $result = bscnn($num1, $num2);
+        }
+        return $result;
+}
+?>
 </body>
 </html>
