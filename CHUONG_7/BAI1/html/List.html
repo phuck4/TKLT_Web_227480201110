@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh Sách Hàng Hóa</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .pagination {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .pagination a, .pagination span {
+            margin: 0 5px;
+            text-decoration: none;
+            color: black;
+        }
+        .pagination a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Danh Sách Hàng Hóa</h2>
+        <table>
+            <tr>
+                <th>Mã hàng</th>
+                <th>Tên hàng</th>
+                <th>Nhà sản xuất</th>
+                <th>Năm sản xuất</th>
+                <th>Giá</th>
+            </tr>
+            <tr>
+                <td>LE001</td>
+                <td>Lenovo</td>
+                <td>LE</td>
+                <td>2020</td>
+                <td>540</td>
+            </tr>
+            <tr>
+                <td>DE002</td>
+                <td>Dell Inspiron</td>
+                <td>DE</td>
+                <td>2020</td>
+                <td>600</td>
+            </tr>
+        </table>
+
+        <!-- Phân trang -->
+        <div class="pagination">
+            <span>&larr;</span>
+            <span>Trang 1 / 3</span>
+            <a href="#">&rarr;</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Cập nhật khách hàng</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cập Nhật Khách Hàng</h2>
+        <form action="../php/UpdateKhachhang.php" method="post">
+            <input type="text" name="makh" placeholder="Mã khách hàng" required>
+            <input type="text" name="tenkh" placeholder="Tên khách hàng">
+            <input type="number" name="namsinh" placeholder="Năm sinh">
+            <input type="text" name="dienthoai" placeholder="Điện thoại">
+            <input type="text" name="diachi" placeholder="Địa chỉ">
+            <input type="submit" value="Cập nhật">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Xóa khách hàng</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Xóa Khách Hàng</h2>
+        <form action="../php/DeleteKhachhang.php" method="post" onsubmit="return confirm('Bạn có chắc chắn muốn xóa khách hàng này?');">
+            <input type="text" name="makh" placeholder="Mã khách hàng cần xóa" required>
+            <input type="submit" value="Xóa">
+        </form>
+    </div>
+</body>
+</html>

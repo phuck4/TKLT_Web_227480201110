@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thêm hàng hóa</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Thêm Hàng Hóa</h2>
+        <form action="../php/InsertHangHoa.php" method="post" onsubmit="return validateForm()">
+            <input type="text" name="mahang" placeholder="Mã hàng" required>
+            <input type="text" name="tenhang" placeholder="Tên hàng" required>
+            <input type="text" name="mansx" placeholder="Mã NSX" required>
+            <input type="number" name="namsx" placeholder="Năm sản xuất" required min="1900" max="<?= date('Y') ?>">
+            <input type="number" name="gia" placeholder="Giá" required min="0">
+            <input type="submit" value="Thêm">
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            let mahang = document.forms[0].mahang.value;
+            let tenhang = document.forms[0].tenhang.value;
+            let mansx = document.forms[0].mansx.value;
+            let namsx = document.forms[0].namsx.value;
+            let gia = document.forms[0].gia.value;
+
+            // Chuyển đổi namsx thành số
+            let namsxNum = parseInt(namsx);
+
+            if (mahang.length > 4) {
+                alert("Mã hàng không được vượt quá 4 ký tự!");
+                return false;
+            }
+            if (tenhang.length > 40) {
+                alert("Tên hàng không được vượt quá 40 ký tự!");
+                return false;
+            }
+            if (mansx.length > 2) {
+                alert("Mã NSX không được vượt quá 2 ký tự!");
+                return false;
+            }
+            // Kiểm tra namsx là số hợp lệ và nằm trong khoảng
+            if (isNaN(namsxNum) || namsxNum < 1900 || namsxNum > 2025) {
+                alert("Năm sản xuất không hợp lệ!");
+                return false;
+            }
+            if (gia < 0) {
+                alert("Giá không được âm!");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+project/
+├── config.php             # Cấu hình chung
+├── functions.php          # Chứa tất cả các hàm
+├── header.php             # Header chung
+├── footer.php             # Footer chung
+├── sidebar.php            # Menu sidebar
+├── employee_list.php      # Trang danh sách nhân viên
+├── employee_add.php       # Trang thêm nhân viên
+├── employee_edit.php      # Trang sửa nhân viên
+├── employee_delete.php    # Xử lý xóa nhân viên
+├── employee_search.php    # Tìm kiếm nhân viên
+├── salary_list.php        # Danh sách lương
+├── salary_calculate.php   # Tính lương
+├── style.css              # CSS cho toàn bộ trang
+└── index.php              # Trang chủ

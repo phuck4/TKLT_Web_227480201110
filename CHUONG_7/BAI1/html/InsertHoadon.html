@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thêm hóa đơn</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Thêm Hóa Đơn</h2>
+        <form action="../php/InsertHoadon.php" method="post">
+            <input type="text" name="mahd" placeholder="Mã hóa đơn" required>
+            <input type="text" name="makh" placeholder="Mã khách hàng" required>
+            <input type="text" name="mahang" placeholder="Mã hàng" required>
+            <input type="number" name="soluong" placeholder="Số lượng" required>
+            <input type="submit" value="Thêm">
+        </form>
+    </div>
+</body>
+</html>
