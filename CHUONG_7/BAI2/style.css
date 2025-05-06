@@ -17,7 +17,7 @@
   .header {
     grid-area: head;
     height: 200px;
-    background: #ccc;
+    background: #a3a1a7;
   }
   .header-grid {
     display: flex;
@@ -68,15 +68,15 @@
     color: #fff;
     border-radius: 4px;
   }
-  /* Display Menu  */
-  .has-submenu > .submenu{
+
+  /* .has-submenu > .submenu{
         display: none;
   }
-  /* Click */
+
   .has-submenu.submenu-active > .submenu:hover{
     display: block;
   } 
-   /* Hover */
+
    .has-submenu:hover > .submenu{
     display: block;
-  }
+  } */
